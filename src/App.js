@@ -16,18 +16,6 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-  const userList = Users.map((Users) => {
-    return (
-      <tr>
-        <td>{Users.name}</td>
-        <td>{Users.username}</td>
-        <td>{Users.email}</td>
-        <td>{Users.phone}</td>
-        <td>{Users.website}</td>
-      </tr>
-    );
-  });
-
   return (
     <div>
       <div className="App">
